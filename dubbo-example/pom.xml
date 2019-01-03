@@ -11,5 +11,8 @@
 
     <artifactId>dubbo-example</artifactId>
 
+    <modules>
+        <module>dubbo-config-begin</module>
+    </modules>
 
 </project>
