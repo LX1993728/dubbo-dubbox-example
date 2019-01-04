@@ -1,4 +1,4 @@
-package liuxun.dubbo.begin.config1_xml.service;
+package liuxun.dubbo.begin.service;
 
 /**
  * @apiNote 定义xml配置的dubbo入门service接口

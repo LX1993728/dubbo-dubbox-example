@@ -1,4 +1,4 @@
-package liuxun.dubbo.begin.config1_xml.service;
+package liuxun.dubbo.begin.service;
 
 public class DemoXmlServiceImpl implements DemoXmlService {
     @Override
