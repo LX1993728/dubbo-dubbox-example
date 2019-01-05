@@ -13,16 +13,16 @@
     <!-- 使用multicast广播注册中心暴露服务地址 224.0.0.0 - 239.255.255.255-->
     <dubbo:registry address="multicast://224.6.6.6:1234" />
 
-    <!--使用zookeeper广播注册中心暴露发现服务地址-->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <!--使用zookeeper广播注册中心暴露发现服务地址 可以同时注册多个注册中心-->
+    <!--<dubbo:registry address="zookeeper://127.0.0.1:2181" />-->
 
     <!-- 使用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol name="dubbo" port="20880" />
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="liuxun.dubbo.begin.config1_xml.service.DemoXmlService" ref="demoXmlService"/>
+    <dubbo:service interface="liuxun.dubbo.begin.service.DemoXmlService" ref="demoXmlService"/>
 
     <!--和本地bean一样实现服务 -->
-    <bean id="demoXmlService" class="liuxun.dubbo.begin.config1_xml.service.DemoXmlServiceImpl" />
+    <bean id="demoXmlService" class="liuxun.dubbo.begin.service.DemoXmlServiceImpl" />
 
 </beans>

@@ -18,7 +18,7 @@
     <dubbo:registry address="multicast://224.6.6.6:1234" />
 
     <!--使用zookeeper广播注册中心暴露发现服务地址-->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <!--<dubbo:registry address="zookeeper://127.0.0.1:2181" />-->
 
     <!--生成远程服务代理，可以和本地一样使用demoXmlService-->
     <dubbo:reference id="demoXmlService" interface="liuxun.dubbo.begin.service.DemoXmlService" />

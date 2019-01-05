@@ -1,0 +1,6 @@
+Springboot+dubbo整合：
+方案一：@EnableDubboConfiguration + application.properties配置dubbo
+方案二：@DubboComponentScan + 配置类中配置dubbo信息
+
+若在配置文件中配置了dubbo信息，必须在主程序上加@EnableDubboConfiguration注解
+若在配置类中配置了dubbo相关信息，必须在主程序上加@DubboComponentScan注解

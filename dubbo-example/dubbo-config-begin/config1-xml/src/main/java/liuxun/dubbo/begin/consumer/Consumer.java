@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Consumer {
     public static void main(String[] args) throws Exception{
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:liuxun/dubbo/begin/config1_xml/consumer/consumer.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:liuxun/dubbo/begin/consumer/consumer.xml");
         context.start();
         DemoXmlService demoXmlService = (DemoXmlService) context.getBean("demoXmlService");
         String hello = demoXmlService.sayHello("this is a xml config");

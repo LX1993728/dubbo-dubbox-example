@@ -1,0 +1,7 @@
+配置方式有4种：
+    - XML配置
+    - 属性配置
+    - API配置
+    - 注解配置
+
+文档地址: http://dubbo.apache.org/zh-cn/docs/user/configuration/xml.html
